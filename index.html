@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Curated AI & Automation Repositories</title>
+  <style>
+    :root {
+      --bg: #0d1117;
+      --card-bg: #161b22;
+      --border: #30363d;
+      --text: #c9d1d9;
+      --heading: #f0f6fc;
+      --accent: #58a6ff;
+      --accent-hover: #79c0ff;
+      --tag-bg: #21262d;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      background-color: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+      padding: 2rem 1rem;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+    }
+
+    header {
+      margin-bottom: 2.5rem;
+      border-bottom: 1px solid var(--border);
+      padding-bottom: 1.5rem;
+    }
+
+    h1 {
+      color: var(--heading);
+      font-size: 2.2rem;
+      margin-bottom: 0.5rem;
+    }
+
+    p.subtitle {
+      color: #8b949e;
+      font-size: 1.1rem;
+    }
+
+    .category {
+      margin-bottom: 2.5rem;
+    }
+
+    .category-title {
+      color: var(--heading);
+      font-size: 1.4rem;
+      margin-bottom: 1rem;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+      gap: 1rem;
+    }
+
+    .card {
+      background-color: var(--card-bg);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 1.25rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      transition: transform 0.2s, border-color 0.2s;
+    }
+
+    .card:hover {
+      transform: translateY(-2px);
+      border-color: var(--accent);
+    }
+
+    .card-title {
+      font-size: 1.1rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .card-title a {
+      color: var(--accent);
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    .card-title a:hover {
+      text-decoration: underline;
+    }
+
+    .card-desc {
+      font-size: 0.9rem;
+      color: #8b949e;
+    }
+
+    footer {
+      text-align: center;
+      margin-top: 3rem;
+      padding-top: 1.5rem;
+      border-top: 1px solid var(--border);
+      color: #8b949e;
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <header>
+      <h1>🚀 Curated AI & Automation Repositories</h1>
+      <p class="subtitle">Uma coleção selecionada dos repositórios open-source mais relevantes no ecossistema de Inteligência Artificial, automação e agentes.</p>
+    </header>
+
+    <!-- Automação, Agentes & Orquestração -->
+    <section class="category">
+      <h2 class="category-title">🛠️ Automação, Agentes & Orquestração</h2>
+      <div class="grid">
+        <div class="card">
+          <h3 class="card-title"><a href="https://github.com/n8n-io/n8n" target="_blank">n8n</a></h3>
+          <p class="card-desc">Plataforma de automação de workflows altamente extensível com suporte nativo a nós de IA.</p>
+        </div>
+        <div class="card">
+          <h3 class="card-title"><a href="https://github.com/firecrawl/firecrawl" target="_blank">Firecrawl</a></h3>
+          <p class="card-desc">API de extração e conversão de páginas da web em Markdown para pipelines de RAG e agentes.</p>
+        </div>
+        <div class="card">
+          <h3 class="card-title"><a href="https://github.com/Significant-Gravitas/AutoGPT" target="_blank">AutoGPT</a></h3>
+          <p class="card-desc">Pioneiro na criação e execução de agentes autônomos para tarefas complexas e iterativas.</p>
+        </div>
+        <div class="card">
+          <h3 class="card-title"><a href="https://github.com/langgenius/dify" target="_blank">Dify</a></h3>
+          <p class="card-desc">Plataforma completa de desenvolvimento de aplicações de IA (LLMOps) e orquestração de RAG.</p>
+        </div>
+        <div class="card">
+          <h3 class="card-title"><a href="https://github.com/browser-use/browser-use" target="_blank">Browser Use</a></h3>
+          <p class="card-desc">Framework para conectar agentes de IA à navegação web interativa diretamente no browser.</p>
+        </div>
+        <div class="card">
+          <h3 class="card-title"><a href="https://github.com/FlowiseAI/Flowise" target="_blank">Flowise</a></h3>
+          <p class="card-desc">Interface drag-and-drop no-code/low-code para construir fluxos baseados em LangChain.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Agentes de Código & Execução CLI -->
+    <section class="category">
+      <h2 class="category-title">💻 Agentes de Código & Execução CLI</h2>
+      <div class="grid">
+        <div class="card">
+          <h3 class="card-title"><a href="https://github.com/OpenHands/OpenHands" target="_blank">OpenHands</a></h3>
+          <p class="card-desc">Agente autônomo capaz de escrever código, executar comandos de terminal e resolver tarefas de software.</p>
+        </div>
+        <div class="card">
+          <h3 class="card-title"><a href="https://github.com/cline/cline" target="_blank">Cline</a></h3>
+          <p class="card-desc">Assistente autônomo de codificação para VS Code que cria/edita arquivos e executa comandos CLI.</p>
+        </div>
+        <div class="card">
+          <h3 class="card-title"><a href="https://github.com/openinterpreter/open-interpreter" target="_blank">Open Interpreter</a></h3>
+          <p class="card-desc">Interface em linguagem natural para o terminal executar códigos em Python, JS e Shell no seu computador.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Infraestrutura & LLMs Locais -->
+    <section class="category">
+      <h2 class="category-title">🏠 Infraestrutura & Execução de LLMs Locais</h2>
+      <div class="grid">
+        <div class="card">
+          <h3 class="card-title"><a href="https://github.com/ollama/ollama" target="_blank">Ollama</a></h3>
+          <p class="card-desc">Ferramenta leve para rodar e gerenciar LLMs open-source localmente via terminal ou API.</p>
+        </div>
+        <div class="card">
+          <h3 class="card-title"><a href="https://github.com/ggml-org/llama.cpp" target="_blank">llama.cpp</a></h3>
+          <p class="card-desc">Motor de inferência de alta performance em C/C++ otimizado para modelos de linguagem locais.</p>
+        </div>
+        <div class="card">
+          <h3 class="card-title"><a href="https://github.com/mudler/LocalAI" target="_blank">LocalAI</a></h3>
+          <p class="card-desc">Alternativa self-hosted e drop-in compatível com a API da OpenAI para execução local.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Interfaces de Usuário & Chat -->
+    <section class="category">
+      <h2 class="category-title">💬 Interfaces de Usuário & Chat (UI/UX)</h2>
+      <div class="grid">
+        <div class="card">
+          <h3 class="card-title"><a href="https://github.com/open-webui/open-webui" target="_blank">Open WebUI</a></h3>
+          <p class="card-desc">Interface web estilo ChatGPT com recursos avançados e integração nativa com Ollama.</p>
+        </div>
+        <div class="card">
+          <h3 class="card-title"><a href="https://github.com/lobehub/lobehub-chat" target="_blank">LobeHub</a></h3>
+          <p class="card-desc">Framework de chat open-source com design moderno, plugins e suporte a múltiplos provedores.</p>
+        </div>
+        <div class="card">
+          <h3 class="card-title"><a href="https://github.com/Mintplex-Labs/anything-llm" target="_blank">AnythingLLM</a></h3>
+          <p class="card-desc">Aplicação completa para RAG e conversa com documentos sem vazamento de dados.</p>
+        </div>
+        <div class="card">
+          <h3 class="card-title"><a href="https://github.com/LibreChat-AI/LibreChat" target="_blank">LibreChat</a></h3>
+          <p class="card-desc">Clone de código aberto do ChatGPT com suporte a multimodalidade e múltiplos provedores.</p>
+        </div>
+        <div class="card">
+          <h3 class="card-title"><a href="https://github.com/janhq/jan" target="_blank">Jan</a></h3>
+          <p class="card-desc">Alternativa 100% offline ao ChatGPT que roda no computador focada em privacidade.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- RAG & Tratamento de Documentos -->
+    <section class="category">
+      <h2 class="category-title">📚 RAG & Tratamento de Documentos</h2>
+      <div class="grid">
+        <div class="card">
+          <h3 class="card-title"><a href="https://github.com/infiniflow/ragflow" target="_blank">RAGFlow</a></h3>
+          <p class="card-desc">Engine de RAG baseada em compreensão profunda de documentos estruturados e não estruturados.</p>
+        </div>
+        <div class="card">
+          <h3 class="card-title"><a href="https://github.com/microsoft/markitdown" target="_blank">MarkItDown</a></h3>
+          <p class="card-desc">Utilitário da Microsoft para conversão de múltiplos formatos de arquivos em Markdown.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Imagem, Áudio & Multimídia -->
+    <section class="category">
+      <h2 class="category-title">🎨 Imagem, Áudio & Multimídia</h2>
+      <div class="grid">
+        <div class="card">
+          <h3 class="card-title"><a href="https://github.com/Comfy-Org/ComfyUI" target="_blank">ComfyUI</a></h3>
+          <p class="card-desc">Interface baseada em nós para pipelines avançados de difusão de imagens.</p>
+        </div>
+        <div class="card">
+          <h3 class="card-title"><a href="https://github.com/AUTOMATIC1111/stable-diffusion-webui" target="_blank">Stable Diffusion WebUI</a></h3>
+          <p class="card-desc">Interface web clássica para geração e edição de imagens via Stable Diffusion.</p>
+        </div>
+        <div class="card">
+          <h3 class="card-title"><a href="https://github.com/lllyasviel/Fooocus" target="_blank">Fooocus</a></h3>
+          <p class="card-desc">Geração de imagem focada em simplicidade e alta qualidade visual automática.</p>
+        </div>
+        <div class="card">
+          <h3 class="card-title"><a href="https://github.com/openai/whisper" target="_blank">Whisper</a></h3>
+          <p class="card-desc">Modelo de reconhecimento de voz e transcrição multilíngue de alta precisão da OpenAI.</p>
+        </div>
+        <div class="card">
+          <h3 class="card-title"><a href="https://github.com/RVC-Boss/GPT-SoVITS" target="_blank">GPT-SoVITS</a></h3>
+          <p class="card-desc">Sistema de clonagem de voz e conversão text-to-speech (TTS) com poucas amostras.</p>
+        </div>
+        <div class="card">
+          <h3 class="card-title"><a href="https://github.com/presenton/presenton" target="_blank">Presenton</a></h3>
+          <p class="card-desc">Ferramenta open-source para geração automatizada de apresentações de slides com IA.</p>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <p>Curated AI Repositories • Publicado via GitHub Pages</p>
+    </footer>
+  </div>
+
+</body>
+</html>
